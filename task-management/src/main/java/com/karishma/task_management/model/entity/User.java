@@ -17,7 +17,9 @@ import java.util.UUID;
 @AllArgsConstructor
 @Data
 public class User {
+    @Id
     @Builder.Default
+
     private String id= UUID.randomUUID().toString();
 
     private String name;
